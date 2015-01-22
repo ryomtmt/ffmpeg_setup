@@ -1,4 +1,4 @@
-sudo yum install -y autoconf automake gcc gcc-c++ git libtool make nasm pkgconfig zlib-devel
+sudo yum install -y autoconf automake gcc gcc-c++ libtool make nasm pkgconfig zlib-devel
 
 mkdir -p ~/ffmpeg/sources
 
