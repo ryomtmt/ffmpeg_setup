@@ -39,8 +39,8 @@ make distclean
 
 cd ~/ffmpeg/sources
 git clone git://source.ffmpeg.org/ffmpeg
-git checkout -b tag2.5.3 n2.5.3
 cd ffmpeg
+git checkout -b tag2.5.3 n2.5.3
 PKG_CONFIG_PATH="$HOME/ffmpeg/build/lib/pkgconfig" ./configure --prefix="$HOME/ffmpeg/build" --extra-cflags="-I$HOME/ffmpeg/build/include" --extra-ldflags="-L$HOME/ffmpeg/build/lib" --bindir="$HOME/ffmpeg/bin" --enable-gpl --enable-nonfree --enable-libfdk_aac --enable-libmp3lame --enable-libx264
 make
 make install
